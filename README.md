@@ -28,11 +28,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')
 [FieldMoreDetail](https://stackoverflow.com/questions/49715802/how-to-use-django-storages-for-media-storage-on-dropbox)
 
 
-# models.py
 
-```file = models.FileField(upload_to=some_path)
-
-replace FileField to ImageField or any other field
 ```
 # urls.py 
 ```urlpatterns +=  static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
